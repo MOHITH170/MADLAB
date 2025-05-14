@@ -1,0 +1,78 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  background-image: url('../assets/club-bg.jpg'); /* Add a nice background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.login-box {
+  background-color: #ffffff10;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 300px;
+  margin: auto;
+}
+
+.login-box h2 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-box button {
+  background-color: #1e88e5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #1565c0;
+}
+
+.login-box a {
+  color: #ffd54f;
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}

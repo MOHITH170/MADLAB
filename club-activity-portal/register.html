@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Club Portal | Register</title>
+  <link rel="stylesheet" href="css/register.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <form name="registerForm" action="php/register.php" method="POST" onsubmit="return validateForm()">
+      <h2>Create Account</h2>
+
+      <input type="text" name="name" placeholder="Full Name" required>
+
+      <input type="email" name="email" placeholder="Email Address" required>
+
+      <input type="password" name="password" placeholder="Create Password" required>
+
+      <button type="submit">Register</button>
+      <p class="login-link">Already have an account? <a href="index.html">Login</a></p>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      const form = document.forms["registerForm"];
+      const email = form["email"].value;
+      const password = form["password"].value;
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+      if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>
